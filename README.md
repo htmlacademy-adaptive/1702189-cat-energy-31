@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Катя Одинцова](https://up.htmlacademy.ru/adaptive/31/user/1702189).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/yermolayev).
 
 ---
 
