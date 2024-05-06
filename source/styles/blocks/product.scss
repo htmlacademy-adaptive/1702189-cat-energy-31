@@ -1,0 +1,13 @@
+.product__title {
+  @include font-family("Oswald");
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.product__text-additional {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}

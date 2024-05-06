@@ -1,0 +1,26 @@
+.specials__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.specials {
+  height: 290px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.specials::before {
+  content: "";
+  background-image: url("../../images/catalog/specials/specials-background-mobile@1x.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/catalog/specials/specials-background-mobile@2x.jpg");
+  }
+}

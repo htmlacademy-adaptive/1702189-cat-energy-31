@@ -1,0 +1,12 @@
+.contact-info__promo {
+  @include font-family("Oswald");
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact-info__text {
+  color: #444444;
+  font-size: 14px;
+  line-height: 20px;
+}
