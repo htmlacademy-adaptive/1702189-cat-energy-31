@@ -23,7 +23,7 @@
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation-list">
+        <ul class="navigation-list list-reset">
           <li class="navigation-list__item">
             <a class="navigation-list__link navigation-list__link--current" href="index.html">Главная</a>
           </li>
@@ -40,19 +40,19 @@
   <main class="main-container">
     <section class="hero">
       <div class="hero__container container">
-        <h1 class="hero__title">Функциональное питание для котов</h1>
-        <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-        <a class="hero__button button" href="#">Подобрать программу</a>
+        <h1 class="hero__title title">Функциональное питание для котов</h1>
+        <p class="hero__subtitle subtitle">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width: 1440px)" srcset="images/index/hero/hero-product-desktop@1x.png 1x, images/index/hero/hero-product-desktop@2x.png 2x" type="image/png" width="552" height="499">
           <source media="(min-width: 768px)" srcset="images/index/hero/hero-product-tablet@1x.png 1x, images/index/hero/hero-product-tablet@2x.png 2x" type="image/png" width="709" height="609">
           <img class="hero__image" src="images/index/hero/hero-product-mobile@1x.png" srcset="images/index/hero/hero-product-mobile@2x.png 2x" alt="Cat Energy Pro с курицей" width="280" height="270">
         </picture>
+        <a class="hero__button button" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
       <div class="programs__container container">
-        <h2 class="visually-hidden">Программы питания</h2>
+        <h2 class="visually-hidden title">Программы питания</h2>
         <article class="programs__item program-card">
           <h3 class="program-card__title">Похудение</h3>
           <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -68,7 +68,7 @@
     <section class="benefits">
       <div class="benefits__container container">
         <h2 class="benefits__title title">Как это работает</h2>
-        <ul class="benefits__list">
+        <ul class="benefits__list list-reset">
           <li class="benefits__item benefits__item--icon-leaf">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="benefits__item benefits__item--icon-substance">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="benefits__item benefits__item--icon-cutlery">Замените один-два приема обычной еды на наше функциональное питание.</li>
@@ -110,7 +110,7 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="visually-hidden subtitle">Контакты</h2>
       <div class="contacts__info contact-info">
         <p class="contact-info__promo">Приглашаем к сотрудничеству дилеров!</p>
         <div class="contact-info__text-wrap">
@@ -126,15 +126,21 @@
       <a class="main-footer__logo" href="index.html">
         <img class="logo-text" src="#" alt="Cat Energy" width="101" height="18">
       </a>
-      <ul class="main-footer__social social-list">
+      <ul class="main-footer__social social-list list-reset">
         <li class="social-list__item">
-          <a class="social-list__link" href="#">Vkontakte</a>
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">Youtube</a>
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">Telegram</a>
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
         </li>
       </ul>
       <div class="main-footer__developers developers">
