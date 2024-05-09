@@ -1,3 +1,39 @@
 .benefits__item {
   color: #444444;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $color-brand;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    background-position: center;
+  }
 }
+
+.benefits__item--icon-leaf {
+  &::before {
+    background-image: url("../../icons/stack.svg#leaf");
+  }
+}
+
+.benefits__item--icon-substance {
+  &::before {
+    background-image: url("../../icons/stack.svg#substance");
+  }
+}
+
+.benefits__item--icon-cutlery {
+  &::before {
+    background-image: url("../../icons/stack.svg#cutlery");
+  }
+}
+
+.benefits__item--icon-scales {
+  &::before {
+    background-image: url("../../icons/stack.svg#scales");
+  }
+}
+
