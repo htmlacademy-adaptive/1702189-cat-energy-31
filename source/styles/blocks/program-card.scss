@@ -15,4 +15,36 @@
   font-size: 16px;
   line-height: 16px;
   color: #000000;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    background-color: #000000;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-repeat: no-repeat;
+    mask-size: 24px 12px;
+  }
+
+  &:hover::before {
+    mask-image: url("../../icons/stack.svg#arrow-long");
+    mask-size: 32px 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program-card--icon-slim {
+  background-image: url("../../icons/stack.svg#program-slim");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+}
+
+.program-card--icon-fit {
+  background-image: url("../../icons/stack.svg#program-fit");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
 }

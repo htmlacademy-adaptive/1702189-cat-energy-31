@@ -1,6 +1,10 @@
-.navigation-list__link {
+.navigation-list__item {
   @include font-family("Oswald");
   font-size: 20px;
   line-height: 20px;
+  text-transform: uppercase;
+}
+
+.navigation-list__link {
   color: #111111;
 }
