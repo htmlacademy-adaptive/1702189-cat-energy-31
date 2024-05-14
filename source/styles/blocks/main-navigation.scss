@@ -1,3 +1,9 @@
+.main-navigation {
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
+}
+
 .main-navigation__toggle {
   display: inline-block;
   border: none;
@@ -6,4 +12,8 @@
   background-image: url("../../icons/stack.svg#burger");
   width: 24px;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

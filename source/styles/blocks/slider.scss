@@ -1,5 +1,20 @@
 .slider {
   position: relative;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
+}
+
+.slider__image-before {
+  width: 280px;
+  height: 246px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__button {
@@ -12,19 +27,21 @@
   height: 256px;
   background-color: #666666;
   padding: 0;
+  left: 50%;
+  top: 50%;
 
   &::before {
     content: "";
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     border: 2px solid;
     border-color: #666666;
     background-color: #ffffff;
     position: absolute;
-    right: -20px;
-    top: 106px;
+    right: -17px;
+    top: calc(50% - 20px);
   }
 
   &::after {
@@ -39,7 +56,7 @@
     background-color: #666666;
     position: absolute;
     right: -11px;
-    top: 119px;
+    top: calc(50% - 11px);
   }
 
   &:hover,
@@ -58,5 +75,9 @@
 
   &:active::before {
     border-color: rgba(94, 170, 47, 0.6);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
   }
 }

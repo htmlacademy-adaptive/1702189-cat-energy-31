@@ -1,13 +1,40 @@
 .main-footer {
   background-color: #f2f2f2;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0;
+  }
+}
+
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__logo {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

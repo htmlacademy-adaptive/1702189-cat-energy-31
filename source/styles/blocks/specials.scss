@@ -1,8 +1,21 @@
 .specials {
+  margin: 0 auto;
   background-color: rgba(104, 183, 56, 0.85);
   display: flex;
   flex-direction: column;
-  min-height: 290px;
+  height: 290px;
+  width: 280px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+  }
 
   &::before {
     content: "";
@@ -17,6 +30,35 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/catalog/specials/specials-background-mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-image: url("../../images/catalog/specials/specials-background-tablet@1x.jpg");
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    &::before {
+      background-image: url(" ../../images/catalog/specials/specials-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-image: url("../../images/catalog/specials/specials-background-desktop@1x.jpg");
+      width: 245px;
+      height: 288px;
+    }
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    &::before {
+      background-image: url(" ../../images/catalog/specials/specials-background-desktop@2x.jpg");
     }
   }
 

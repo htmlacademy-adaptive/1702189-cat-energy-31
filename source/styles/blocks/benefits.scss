@@ -1,3 +1,15 @@
+.benefits__list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 37px;
+    justify-content: space-between;
+  }
+}
+
 .benefits__item {
   color: #444444;
 
@@ -10,6 +22,10 @@
     background-repeat: no-repeat;
     background-size: 30px 32px;
     background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
   }
 }
 

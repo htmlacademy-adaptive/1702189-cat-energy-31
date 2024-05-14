@@ -1,10 +1,41 @@
+.navigation-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
+  }
+}
+
 .navigation-list__item {
   @include font-family("Oswald");
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .navigation-list__link {
   color: #111111;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.navigation-list--inner .navigation-list__link {
+  color: #000000;
 }

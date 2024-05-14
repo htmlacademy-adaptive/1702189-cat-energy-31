@@ -5,3 +5,25 @@
 .reviews__description {
   color: #444444;
 }
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.reviews__wrap {
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+  }
+}
