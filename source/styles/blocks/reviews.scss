@@ -1,9 +1,16 @@
 .reviews {
+  padding: 25px 0 40px;
   background-color: #eaeaea;
+}
+
+.reviews__title {
+  margin-bottom: 40px;
 }
 
 .reviews__description {
   color: #444444;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .reviews__container {

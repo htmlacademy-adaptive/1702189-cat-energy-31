@@ -1,3 +1,19 @@
+.benefits {
+  padding: 23px 0 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 69px;
+  }
+}
+
+.benefits__title {
+  margin-bottom: 40px;
+}
+
 .benefits__list {
   display: flex;
   flex-flow: column wrap;
@@ -12,6 +28,9 @@
 
 .benefits__item {
   color: #444444;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 
   &::before {
     content: "";
@@ -22,6 +41,7 @@
     background-repeat: no-repeat;
     background-size: 30px 32px;
     background-position: center;
+    flex-shrink: 0;
   }
 
   @media (min-width: $tablet-width) {
