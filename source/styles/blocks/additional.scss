@@ -1,3 +1,15 @@
+.additional {
+  padding: 25px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 48px;
+  }
+}
+
 .additional__wrap {
   display: flex;
   flex-direction: column;
@@ -9,7 +21,35 @@
 }
 
 .additional__list {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 896px;
+    margin-bottom: 0;
+  }
+}
+
+.additional__title {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.additional__specials {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 auto;
   }
 }

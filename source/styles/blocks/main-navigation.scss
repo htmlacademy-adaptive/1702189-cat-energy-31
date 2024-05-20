@@ -3,18 +3,22 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
+    padding: 0 6px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 2px 2px 0 50px;
   }
 }
 
 .main-navigation__toggle {
   display: inline-block;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-image: url("../../icons/stack.svg#burger");
   width: 24px;
   height: 24px;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#burger");
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;

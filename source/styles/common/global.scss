@@ -1,10 +1,10 @@
 body {
   @include font-family("Lato");
+  min-width: 320px;
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  margin: 0;
-  min-width: 320px;
 }
 
 
@@ -15,10 +15,10 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  display: block;
 }
 
 a {
@@ -30,16 +30,16 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .list-reset {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }

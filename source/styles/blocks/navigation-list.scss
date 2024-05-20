@@ -14,6 +14,7 @@
 
 .navigation-list__item {
   @include font-family("Oswald");
+  position: relative;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -38,4 +39,49 @@
 
 .navigation-list--inner .navigation-list__link {
   color: #000000;
+}
+
+.navigation-list__link--current {
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -11px;
+    left: 0;
+    display: block;
+    height: 2px;
+    background-color: $color-brand;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -11px;
+      left: 0;
+      display: block;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.navigation-list--inner .navigation-list__link--current {
+  &::after {
+    background-color: $color-brand;
+  }
+}
+
+.navigation-list__link:hover {
+  opacity: 0.6;
+}
+
+.navigation-list__link:active {
+  opacity: 0.3;
+}
+
+.navigation-list__link--current:hover,
+.navigation-list__link--current:active {
+  opacity: 1;
 }
