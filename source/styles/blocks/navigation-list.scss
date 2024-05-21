@@ -42,15 +42,17 @@
 }
 
 .navigation-list__link--current {
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -11px;
-    left: 0;
-    display: block;
-    height: 2px;
-    background-color: $color-brand;
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -11px;
+      left: 0;
+      display: block;
+      height: 2px;
+      background-color: $color-brand;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -84,4 +86,84 @@
 .navigation-list__link--current:hover,
 .navigation-list__link--current:active {
   opacity: 1;
+}
+
+.main-navigation--opened .navigation-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  padding: 2px 0 0;
+  background-color: #ffffff;
+}
+
+.main-navigation--opened .navigation-list__item {
+  padding: 22px 24px 24px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+}
+
+.main-navigation--opened .navigation-list__item:first-child {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+}
+
+.nojs .navigation-list {
+  position: static;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.nojs .navigation-list__item {
+  padding: 22px 24px 24px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+}
+
+.nojs .navigation-list__item:first-child {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+}
+
+.main-navigation--opened .navigation-list--inner {
+  padding: 0;
 }

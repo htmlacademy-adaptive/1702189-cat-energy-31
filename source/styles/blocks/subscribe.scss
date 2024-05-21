@@ -1,5 +1,6 @@
 .subscribe {
   padding: 20px 0 40px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding: 40px 38px 80px;
