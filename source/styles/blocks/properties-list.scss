@@ -1,5 +1,31 @@
+.properties-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    gap: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 6px;
+  }
+}
+
 .properties-list__item {
+  display: flex;
+  justify-content: space-between;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 5px;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 6px;
+  }
 }

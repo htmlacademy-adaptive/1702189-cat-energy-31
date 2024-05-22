@@ -1,0 +1,20 @@
+.programs__container {
+  display: flex;
+  gap: 20px;
+  flex-flow: column wrap;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+.programs__item {
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 40px);
+  }
+}

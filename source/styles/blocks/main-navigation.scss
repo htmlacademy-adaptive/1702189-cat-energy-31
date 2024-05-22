@@ -1,9 +1,37 @@
+.main-navigation {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 6px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 2px 2px 0 50px;
+  }
+}
+
 .main-navigation__toggle {
   display: inline-block;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-image: url("../../icons/stack.svg#burger");
   width: 24px;
   height: 24px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#burger");
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/stack.svg#close");
+}
+
+.nojs .main-navigation__toggle {
+  display: none;
 }

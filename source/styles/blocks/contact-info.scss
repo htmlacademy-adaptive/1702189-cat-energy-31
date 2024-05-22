@@ -1,12 +1,55 @@
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 565px;
+    padding: 0 80px;
+  }
+}
+
 .contact-info__promo {
   @include font-family("Oswald");
-  color: #111111;
+  max-width: 140px;
+  margin: 0;
+  padding-right: 10px;
   font-size: 16px;
   line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contact-info__text-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+    text-align: end;
+    gap: 20px;
+  }
 }
 
 .contact-info__text {
-  color: #444444;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

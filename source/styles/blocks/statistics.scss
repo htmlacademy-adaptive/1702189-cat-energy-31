@@ -1,17 +1,111 @@
+.statistics {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.statistics__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 34px;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.statistics__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 124px;
+  min-height: 56px;
+  text-align: center;
+  border: (solid 1px #cdcdcd);
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    min-height: 72px;
+  }
+}
+
 .statistics__item-value {
   @include font-family("Oswald");
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 14px 20px 9px;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .statistics__item-description {
+  max-width: 90px;
+  margin-bottom: -16px;
+  margin-left: 0;
+  padding: 0 14px;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  text-transform: lowercase;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
+    margin-bottom: -6px;
+    padding: 0 9px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }
 
 .statistics__cost {
   @include font-family("Oswald");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: 14px;
   line-height: 20px;
+  gap: 3px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 66px;
+  }
+}
+
+.statistics__cost-text {
+  margin: 0;
+  text-transform: uppercase;
 }
