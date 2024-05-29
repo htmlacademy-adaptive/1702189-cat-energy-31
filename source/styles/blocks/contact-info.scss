@@ -8,8 +8,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 565px;
-    padding: 0 80px;
+    position: relative;
+    z-index: 2;
+    min-width: 565px;
+    max-width: max-content;
+    padding: 60px 73px 60px 80px;
+    background-color: #ffffff;
   }
 }
 
@@ -28,6 +32,10 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .contact-info__text-wrap {
@@ -39,6 +47,10 @@
     max-width: 163px;
     text-align: end;
     gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

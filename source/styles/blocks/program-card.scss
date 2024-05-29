@@ -1,5 +1,7 @@
 .program-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 30px 20px 18px;
   background-color: #f2f2f2;
 
@@ -153,6 +155,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: auto;
     padding: 73px 0 30px;
   }
 }
@@ -167,10 +170,11 @@
   color: #000000;
   text-transform: uppercase;
 
+
   &::after {
     content: "";
     display: block;
-    width: 32px;
+    min-width: 32px;
     height: 10px;
     margin-left: 15px;
     background-color: #000000;

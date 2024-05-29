@@ -3,10 +3,12 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    max-width: 500px;
     padding: 0 6px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: max-content;
     padding: 2px 2px 0 50px;
   }
 }

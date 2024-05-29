@@ -47,6 +47,7 @@
 .additional-product__properties-wrap {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
   grid-row: 2;
   margin: 0;
   font-size: 14px;
@@ -66,6 +67,10 @@
     min-width: 285px;
     margin-left: auto;
   }
+}
+
+.additional-product__properties {
+  max-width: 50%;
 }
 
 .additional-product__button {

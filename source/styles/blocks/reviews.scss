@@ -3,12 +3,13 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 75px;
-    background-color: #ffffff;
+    padding: 45px 0 101px;
+    background: linear-gradient(to top, #eaeaea 0% 462px, #ffffff 462px 100%);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 101px;
+    padding: 0 0 75px;
+    background: linear-gradient(#ffffff 0% 136px, #f2f2f2 136px 100%);
   }
 }
 
@@ -51,11 +52,22 @@
 }
 
 .reviews__wrap {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 99px;
+    margin-bottom: 104px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__slider {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 auto;
   }
 }
