@@ -1,0 +1,66 @@
+.subtitle {
+  @include font-family("Oswald");
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.subtitle--inner {
+  position: relative;
+  max-width: max-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: calc(100% + 40px);
+    bottom: 50%;
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $color-brand;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: calc(100% + 40px);
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $color-brand;
+  }
+}
+
+.subtitle--with-paddings {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &::before {
+      right: 100%;
+    }
+
+    &::after {
+      left: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: calc(100% + 40px);
+    }
+
+    &::after {
+      left: calc(100% + 40px);
+    }
+  }
+}

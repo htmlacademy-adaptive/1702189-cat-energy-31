@@ -1,0 +1,37 @@
+.developers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    gap: 23px;
+  }
+}
+
+.developers__name {
+  max-width: 120px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.developers__logo {
+  width: 27px;
+  height: 34px;
+  margin: 0;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#logo-html-academy");
+  mask-repeat: no-repeat;
+  mask-size: 27px 34px;
+}
+
+.developers:hover .developers__logo {
+  background-color: $color-brand;
+}
+
+.developers:active {
+  opacity: 0.3;
+}

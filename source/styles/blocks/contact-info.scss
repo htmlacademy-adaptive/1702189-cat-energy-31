@@ -1,0 +1,67 @@
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 2;
+    min-width: 565px;
+    max-width: max-content;
+    padding: 60px 73px 60px 80px;
+    background-color: #ffffff;
+  }
+}
+
+.contact-info__promo {
+  @include font-family("Oswald");
+  max-width: 140px;
+  margin: 0;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.contact-info__text-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+    text-align: end;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.contact-info__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
