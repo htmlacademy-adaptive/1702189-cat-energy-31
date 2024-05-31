@@ -1,1 +1,0 @@
-var e=document.querySelector(".main-navigation__toggle"),n=document.querySelector(".main-navigation"),o=document.querySelector(".page__body");o.classList.remove("nojs");e.addEventListener("click",()=>{n.classList.toggle("main-navigation--opened")});
