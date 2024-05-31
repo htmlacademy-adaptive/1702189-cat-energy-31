@@ -14,9 +14,11 @@
 .properties-list__item {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+  gap: 3px;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 5px;
@@ -26,6 +28,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 6px;
+    padding: 0 0 7px;
   }
+}
+
+.properties-list__text {
+  max-width: 50%;
 }

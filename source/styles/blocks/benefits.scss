@@ -48,8 +48,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    justify-content: center;
     margin-right: 0;
+    gap: 73px;
   }
 }
 

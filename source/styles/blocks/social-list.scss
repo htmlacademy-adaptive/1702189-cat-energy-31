@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 390px;
   padding: 20px 0;
   gap: 24px;
 
@@ -30,6 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 150px;
     padding: 0;
 
     &::before {
