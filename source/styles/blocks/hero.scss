@@ -55,9 +55,9 @@
 
     &::before {
       top: 0;
-      left: 50%;
+      right: 0;
       display: block;
-      width: 720px;
+      width: 50vw;
       height: 694px;
       background-color: #535257;
       background-image: url("../../images/index/hero/hero-background-desktop@1x.jpg");
@@ -67,9 +67,9 @@
 
     &::after {
       top: 0;
-      left: 50%;
+      right: 0;
       display: block;
-      width: 720px;
+      width: 50vw;
       height: 694px;
     }
   }

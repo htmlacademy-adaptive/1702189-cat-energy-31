@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 390px;
   padding: 20px 0;
   gap: 24px;
 
@@ -41,6 +40,10 @@
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 390px;
   }
 }
 

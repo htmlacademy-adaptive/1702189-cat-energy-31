@@ -29,7 +29,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 896px;
+    width: 100%;
+    max-width: 896px;
     margin-bottom: 0;
   }
 }
@@ -51,6 +52,8 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    align-self: center;
     margin: 0 0 0 auto;
   }
 }
